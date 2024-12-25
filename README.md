@@ -1,40 +1,53 @@
-# HoYoverse Shaders for Blender/Goo Engine 3.3 and above
+# THIS IS FORK SHADER. 
+Basically, please contact the main repository for FBX model use.
+I have also translated the README of the main repository into Japanese and added explanations for Japanese users, such as official examples of its use.
 
-## Trailer
+This shader material has been modified for use with PMX models. It's a simple node edit that only removes the reference to vertex colors.
+
+#  Blender/Goo Engine 3.3以上の PMXモデル向け "原神" 再現シェーダー
+
+## トレイラーPV
 
 [![Trailer](https://img.youtube.com/vi/sbmphjUkVsA/maxresdefault.jpg)](https://youtu.be/sbmphjUkVsA)
 
-## Preview *(heavily post-processed)*
+## プレビュー *(heavily post-processed)*
 ![Preview](https://pbs.twimg.com/media/FMHJjhOUYAAvPnR?format=jpg)
 
 ![Preview](https://pbs.twimg.com/media/FgP2vD1akAAKNgs?format=jpg)
 
-## Overview made by No_Tables *(thank you!)*
+## 概要 by No_Tables *(thank you!)* / translated and add fnoji 
 
 [![Overview by No_Tables](https://i.imgur.com/ktMusVY.jpg)](https://youtu.be/97G7LqFoTdY)
 
-## Usage
-1. Either download a release [here](https://github.com/festivize/Blender-miHoYo-Shaders/releases), or download from the [source](https://github.com/festivize/Blender-miHoYo-Shaders/archive/refs/heads/main.zip) for the latest commit.
-2. In a new project with your desired character mesh, append whatever materials the .blend file you downloaded will contain.
-3. Replace the original materials of the mesh with the materials from the .blend file you just appended.
-4. Import the textures into their corresponding image nodes/texture slots.
-5. Constrain the empty object named *Head Origin* to the head bone of your character with a **Child Of** constraint.
-7. This [video](https://youtu.be/97G7LqFoTdY) made by [No_Tables](https://twitter.com/No_Tables) showcases the actual shader without any post-processing, and provides an overview as well.
-8. This [video](https://youtu.be/vWfd3NIezpQ) made by [Bonny](https://twitter.com/BonnyTweetsOFF) is a (slightly outdated) tutorial on how to setup the shader 
-9. Check out this [Blender add-on](https://github.com/michael-gh1/Addons-And-Tools-For-Blender-miHoYo-Shaders) by Mken for automating the set-up for the shader.
+## 使用方法
+1. リリースよりマテリアル.blendをダウンロードしてください。
+2. 好きなキャラクターメッシュを使用した新規プロジェクトで、ダウンロードしたシェーダーマテリアル.blendを全てアペンドしてください。
+3. メッシュの元々のマテリアルを、追加したシェーダーマテリアル.blendに置き換えてください。
+4. テクスチャを画像ノードにインポートしてください。
+5. *Head Origin* とする空のオブジェクトを **Child Of** コンストレイトを使用して、キャラクターの頭ボーンにコンストレイトしてください。
+7. [概要ビデオ１](https://youtu.be/97G7LqFoTdY) made by [No_Tables](https://twitter.com/No_Tables) 概要ビデオ１（少し古い）
+8. [概要ビデオ２](https://youtu.be/vWfd3NIezpQ) made by [Bonny](https://twitter.com/BonnyTweetsOFF) 概要ビデオ２（少し古い）
+9. シェーダー適用を自動化する[Blenderアドオン](https://github.com/michael-gh1/Addons-And-Tools-For-Blender-miHoYo-Shaders) by Mken が存在しますが、これは全てFBXモデル向けです。PMX向けは現在作成予定となります。
 
-## Contact
-- [Discord server](https://discord.gg/85rP9SpAkF)
-- [Twitter](https://twitter.com/festivizing)
+## 問い合わせ
+〇ソースリポジトリ
+- [Discord server](https://discord.gg/85rP9SpAkF) / Omatsuri [EN]
+- [Twitter](https://twitter.com/festivizing) / [EN/PH]
 
-## Rules
-- The [GPL-3.0 License](https://github.com/festivize/Blender-miHoYo-Shaders/blob/main/LICENSE) applies.
-- If you use this shader as is in renders, animations or any form of medium that does not directly modify the shader, I'd appreciate being credited - **you don't have to do it though.**
-- If you use this shader as the main reference for your own shader, please give credit where it's due.
-- In compliance with the license, you are free to redistribute the files as long as you attach a link to the source repository.
+基本的にPMX向けに編集されたこのシェーダーは、**ソースリポジトリの開発者や貢献者とは関係がなく、原則サポートしていません。**
+PMXモデルへの適用などの問い合わせについては開発者や貢献者には行わず、以下へ行ってください。
+- [Discord server](https://discord.gg/85rP9SpAkF) / Hoyo Animation Creator [JP/EN]
+- [Twitter](https://twitter.com/fnoji) / [JP/EN]
 
-## Special thanks
-All of this wouldn't be possible if it weren't for:
+## ルール
+- このPMX向けシェーダーは、基本的にソースリポジトリのルールが継承されています。
+- ライセンスは [GPL-3.0 License](https://github.com/festivize/Blender-miHoYo-Shaders/blob/main/LICENSE) が適用されます。
+- このシェーダーをレンダリング、アニメーション、シェーダを直接変更しないメディアで使用する場合、貢献者にクレジットを頂けると有難いです。ただし、強制ではありません。
+- このシェーダーを独自のシェーダーの主要資料として使用する場合、適切なクレジット表記を行ってください。
+- ライセンスに従い、ソースリポジトリへのリンクを添付することにより、ファイルの転載や再配布は自由です。
+
+## 貢献者
+シェーダーの開発貢献者は以下の通りです。
 - Arc System Works
 - HoYoverse
 - [Aerthas Veras](https://github.com/Aerthas/) 
@@ -47,12 +60,29 @@ All of this wouldn't be possible if it weren't for:
 - [Llama](Https://twitter.com/Llama3D)
 - [No_Tables](https://twitter.com/No_Tables)
 
-For that, I'd like to give back to the community with what I've learned. With that said, I hope you learn a thing or two. Enjoy!
+彼らが貢献しなければこのシェーダーの制作は実現しませんでした。
+それにより、学んだことをコミュニティに還元したいと思っています。このシェーダーを使用し、あなたも何かを一緒に学んでくれることを願っています。Enjoy!
 
-## Disclaimer
-These shaders aren't meant to be 100% accurate. What I only aim for is to replicate the in-game looks to the best of my ability.
+## 免責事項
 
-While the shaders are developed primarily for datamined assets, this repository does not endorse datamining in any way whatsoever and will never directly provide the assets nor tools in extracting from game files.
+この再現シェーダーは、100％正確な内容であることを保証していません。ゲーム内の見た目をBlender上で可能な限り再現することに特化しています。
 
-## Since you've read this far...
-Using this shader is completely **free** if it's not already evident from the license BUT - if and only if you have something to spare and would like to support me, then you can do so on my Ko-fi [here](https://ko-fi.com/festivity). I appreciate every tip and each one motivates me to keep on improving the shader.
+また、このシェーダーは解析アセット向け（FBX）用に開発されていますが、フォーク者がPMXモデル向けに適用ができるように一部を改変しています。ただ、FBXモデルに適用する場合より、表現が劣ってしまう点に注意が必要です。
+
+原則的には、ソースリポジトリでFBXモデルへ適用する事を推奨します。
+
+## シェーダーのメーカー公認作品採用例
+
+シェーダーのメーカー公認作品採用例の１例を記載します。
+
+[HoyoFair 1](https://www.youtube.com/live/nCar9SiJFrs?si=NkbxH-n9Ra8UG3C6&t=1843) / No_Tables
+[HoyoFair 2](https://www.youtube.com/live/EM9x7y0BNW8?si=zzu1vYTaIqmSh2R7&t=2703) / Subutai Productions
+
+その他、HoYoCreators会員者や、Hoyoverse公式主催の動画コンテスト受賞作品などで幅広く使用された実績が多くあります。
+詳細な点は全て [Discord server](https://discord.gg/85rP9SpAkF) / Hoyo Animation Creator [JP/EN] へ記載していますので、問い合わせはこちらへよろしくお願いいたします。
+
+## ソースリポジトリの開発者より
+「このシェーダーの利用は、ライセンスを読めば明らかですが、完全に無料です。ただし、もしあなたが少しでも余裕があり、私を支援したいと思ってくださるなら、私のKo-fi [こちら](https://ko-fi.com/festivity) で支援していただけます。 すべての支援に感謝し、それがシェーダーを改善し続けるモチベーションになっています。」
+
+
+
